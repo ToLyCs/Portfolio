@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!-- Coding By To Ly -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- sldiderr -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <style>
+        .animated-img {
+            position: relative;
+            opacity: 0;
+            animation: fadeInUp 4s linear forwards;
+        }
+
+        .animated-skills {
+            position: relative;
+            opacity: 0;
+            animation: moveleft 4s linear forwards;
+        }
+
+        .animatedcard {
+            position: relative;
+            opacity: 0;
+            animation: fadeInUp 3s linear forwards;
+        }
+
+        @keyframes moveleft {
+            0% {
+                opacity: 0;
+                transform: translateX(25px);
+            }
+
+            25% {
+                opacity: 0.5;
+                transform: translateX(50pxpx);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: translateX(75px);
+            }
+
+            75% {
+                opacity: 0.75;
+                transform: translateX(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(150px);
+            }
+
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: translateY(25px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <title>Responsive Navigation Menu Bar</title>
+</head>
+
+<body style="background-color: #2d2e32;">
+    <nav>
+        <div class="nav-bar">
+
+            <div class="menu">
+
+
+                <ul class="nav-links">
+                    <li><a href="index2.html">Home</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-Me-btn">
+                <a href="contact.html" id="conbtn"> Contact Me</a>
+                <i class='bx bx-menu sidebarOpen'></i>
+            </div>
+
+        </div>
+    </nav>
+    <!-- header start -->
+    <div class="header-section">
+        <div class="left-section">
+            <!--My img-->
+            <img class="my-img" src="IMG.JPG" alt="Header Image">
+        </div>
+        <div class="right-section">
+            <div class="intro animatedcard">
+                <h2 style="color: #64f4ab;">--Introduction</h2>
+            </div>
+            <div class="main-text">
+                <h1>
+
+                    Hello<br>
+                    I'm To <Br>
+                    Ly
+                </h1>
+            </div>
+            <div class="paragraph animatedcard">
+                <p>I'm currently a senior student at OU, studying Computer Science with a focus on becoming a proficient Software Developer. Over the years, I've cultivated a diverse skill set that ensures high performance in roles like the one I'm applying for today. <br>
+                    I have extensive experience working both alone and as part of a team on often time-sensitive, challenging software development projects that require outstanding creative and technical capabilities and the ability to ensure all work is optimized across a wide range of platforms. <br>
+                    I take my work as a Software Developer seriously and this means I always ensure my skills are kept up to date within this rapidly changing industry.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- cards and skills -->
+    
+    <section class="skills">
+        <div class="container">
+            <div class="content-section" style="padding: 9% 5em;">
+                <p style="color: #64f4ab;">--My Skills</p>
+                <h1 style="padding:20px 1.5em; font-size: 36px;">Why Hire Me For the Next Project?</h1>
+                <p style="padding: 25px; font-size: larger;">
+                    I have extensive experience working both alone and as part of a team on often time-sensitive,
+                    challenging software development projects that require outstanding creative
+                    and technical capabilities and the ability to ensure all work is optimized across a wide range of platforms.
+                </p>
+                <div class="cv-button" style="padding: 26px;">
+                    <a href="Resume_ToLy.pdf">Download CV</a>
+                </div>
+            </div>
+            <div class="cards-section">
+                <!-- Card 1: Machine Learning -->
+                <div class="card card1 anime" style="background-color: #2d2e32; border: none; width: 300px; background-color: #25262a; padding: 20px; border-radius: 44px;">
+                    <div style="text-align: center; margin-left: 30%;">
+                        <svg width="100" height="100">
+                            <circle cx="50" cy="50" r="40" fill="#2d2e32" stroke="#64f4ab" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 style="text-align: center; margin-top: 20px; color: #ffffff; font-family:monospace;">Machine Learning</h3>
+                    <p style="text-align: center; color: #E8E8E8;font-family:monospace;">The technological revolution is changing aspect</p>
+                </div>
+    
+                <!-- Card 2: Network Programming -->
+                <div class="card card2 anime" style="background-color: #2d2e32; border: none; width: 300px; background-color: #25262a; padding: 20px; border-radius: 44px;">
+                    <div style="text-align: center; margin-left: 30%;">
+                        <svg width="100" height="100">
+                            <circle cx="50" cy="50" r="40" fill="#2d2e32" stroke="#64f4ab" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 style="text-align: center; margin-top: 20px; color: #ffffff; font-family:monospace;">Network Programming</h3>
+                    <p style="text-align: center; color: #E8E8E8;font-family:monospace;">Efficient, reliable network solutions for modern distributed systems.</p>
+                </div>
+    
+                <!-- Card 3: Data Structures -->
+                <div class="card card3 anime" style="background-color: #2d2e32; border: none; width: 300px; background-color: #25262a; padding: 20px; border-radius: 44px;">
+                    <div style="text-align: center; margin-left: 30%;">
+                        <svg width="100" height="100">
+                            <circle cx="50" cy="50" r="40" fill="#2d2e32" stroke="#64f4ab" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 style="text-align: center; margin-top: 20px; color: #ffffff; font-family:monospace;">Data Structures</h3>
+                    <p style="text-align: center; color: #E8E8E8;font-family:monospace;">Optimizing algorithms and processing times with advanced data structures.</p>
+                </div>
+    
+                <!-- Card 4: Algorithm Analysis -->
+                <div class="card card4 anime" style="background-color: #2d2e32; border: none; width: 300px; background-color: #25262a; padding: 20px; border-radius: 44px;">
+                    <div style="text-align: center; margin-left: 30%;">
+                        <svg width="100" height="100">
+                            <circle cx="50" cy="50" r="40" fill="#2d2e32" stroke="#64f4ab" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 style="text-align: center; margin-top: 20px; color: #ffffff; font-family:monospace;">Algorithm Analysis</h3>
+                    <p style="text-align: center; color: #E8E8E8;font-family:monospace;">Deep insights into algorithm efficiency and complexity reduction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+
+<!-- Skills Details Section -->
+<div class="skills-details container mx-auto pt-16">
+    <!-- Project 1: Frozen Lake Game -->
+    <div class="flex flex-wrap">
+        <div class="w-full lg:w-1/2 p-10">
+            <h4 class="project-title">Project 1</h4>
+            <h2 class="project-heading">Frozen Lake Game (OpenAI)</h2>
+            <p class="project-description">
+                • Implemented two distinct reinforcement learning algorithms, SARSA and Q-learning, to compare their performance.<br>
+                • Utilized Python and relevant libraries to build and train models.<br>
+                • Conducted thorough experimentation and analysis to evaluate effectiveness and efficiency of each algorithm.<br>
+                • Optimized algorithm performance and troubleshooting challenges.
+            </p>
+            <a href="RL_FrozenLake_Exploring.pdf" class="read-more">Read more</a>
+        </div>
+        <div class="w-full lg:w-1/2 flex justify-center items-center">
+            <img src="lake.png" alt="Frozen Lake Game Image" class="project-image">
+        </div>
+    </div>
+
+    <!-- Project 2: Parallel Encryption and Decryption -->
+    <div class="flex flex-wrap mt-20">
+        <div class="w-full lg:w-1/2 flex justify-center items-center">
+            <img src="supercomputer.jpg" alt="High-Performance Computing Image" class="project-image">
+        </div>
+        <div class="w-full lg:w-1/2 p-10">
+            <h4 class="project-title">Project 2</h4>
+            <h2 class="project-heading">Parallel Encryption and Decryption on HPC Platform</h2>
+            <p class="project-description">
+                • Leveraged OpenMP, GPU, and MPI for implementing parallel patterns for data encryption and decryption.<br>
+                • Utilized a supercomputer at OU for high-performance computing needs.<br>
+                • Focused on efficient, scalable solutions for security in distributed systems.
+            </p>
+            <a href="Ly_To_Project_5_Report.pdf" class="read-more">Read more</a>
+        </div>
+    </div>
+</div>
+
+<!-- Project 3: Tetris Game Section -->
+<div class="container skills-details mx-auto mt-20 pt-16">
+    <div class="flex flex-wrap">
+        <!-- Textual description on the left -->
+        <div class="w-full lg:w-1/2 p-10">
+            <h4 class="project-title">Project 3</h4>
+            <h2 class="project-heading">Multiplayer Tetris Game with Secure Login</h2>
+            <p class="project-description">
+                Developed a multiplayer Tetris game featuring secure user authentication and two-player simultaneous gameplay using Python. This project highlights my capabilities in building engaging and interactive gaming experiences with a focus on networked software development.
+            </p>
+            <a href="tetris.html" class="read-more">Read more</a>
+        </div>
+        <!-- Image on the right -->
+        <div class="w-full lg:w-1/2 flex justify-center items-center">
+            <img src="tetris.png" alt="Multiplayer Tetris Game" class="project-image">
+        </div>
+    </div>
+</div>
+
+
+<!-- Button with decorative stars -->
+<div class="center-button">
+    <button class="view-all-button">
+        View All
+        <div class="star-container">
+            <!-- SVG stars are repeated with the same structure; consider using a loop in a templating engine or JavaScript if dynamically generated -->
+            <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"/>
+            </svg>
+        </div>
+    </button>
+</div>
+
+    <div class="wrapperx">
+
+        <div class="containerx">
+
+            <span class="num" data-val="20">0</span>
+            <span class="text">Projects Done</span>
+        </div>
+
+        <div class="containerx">
+
+            <span class="num" data-val="8">0</span>
+            <span class="text">Honors and Activities</span>
+        </div>
+
+        <div class="containerx num2">
+
+            <span class="num " data-val="4">0</span>
+            <span class="text">Years Experience</span>
+        </div>
+    </div>
+
+    <!-- slider  section  -->
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                arrows: false,
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+
+
+    <!-- footer section  -->
+
+
+    <div class="footer1">
+
+        <div class="infoo">
+            <h3 style="color: white;">© 2024 - creativity by To Ly.</h3>
+        </div>
+        <div class="otheracc">
+
+            <div class="elementor-grid-item">
+                <a class="elementor-icon elementor-social-icon elementor-social-icon-auxicon-twich elementor-repeater-item-395a9c5"
+                    href="#" target="_blank">
+
+                    <i class="auxicon auxicon-twich"></i> </a>
+            </div>>
+            <div class="elementor-grid-item">
+                <a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin-in elementor-repeater-item-638ce13"
+                    href="https://www.linkedin.com/in/to-ly-b27603261/" target="_blank">
+
+                    <i class="fab fa-linkedin-in"></i> </a>
+            </div>>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script>
+
+
+        const intersectionCallback = (entries) => {
+            for (const entry of entries) { // Loop over all elements that either enter or exit the view.
+                if (entry.isIntersecting) { // This is true when the element is in view.
+                    entry.target.classList.add('animatedcard'); // Add a class.
+                }
+            }
+        }
+
+        /**
+         * Create a observer and use the instersectionCallback as 
+         * the instructions for what to do when an element enters
+         * or leaves the view
+         */
+        const observer = new IntersectionObserver(intersectionCallback);
+
+        /**
+         * Get all .item elements and loop over them.
+         * Observe each individual item.
+         */
+        const items = document.querySelectorAll('.anime');
+        for (const item of items) {
+            observer.observe(item);
+            console.log("observ");
+        }
+
+    </script>
+
+    <script>
+        $(window).on('scroll', function () {
+            var st = $(this).scrollTop(),
+                vh = $(this).height(),
+                $counter = $('.wrapperx'),
+                ct = $counter.offset().top;
+            if ((st + vh) > ct) {
+                // #counter is in the viewport
+
+                let valueDisplays = document.querySelectorAll(".num");
+                let interval = 100;
+
+                valueDisplays.forEach((valueDisplay) => {
+                    let startValue = 0;
+                    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+                    let duration = Math.floor(interval / endValue);
+                    let counter = setInterval(function () {
+                        startValue += 1;
+                        valueDisplay.textContent = startValue;
+                        if (startValue == endValue) {
+                            clearInterval(counter);
+                        }
+                    }, duration);
+                });
+            }
+        })</script>
+
+</body>
+</body>
+
+</html>
